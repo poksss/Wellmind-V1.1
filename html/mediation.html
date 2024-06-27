@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WellMind:Helping with Care</title>
+    <link rel="stylesheet" href="../css/styles2.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link rel="icon" href="../assets/icon-light.png">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  </head>
+  <body class="root">
+    <!-- menu side bar -->
+    <nav class="main-menu">
+      <div>
+        <div class="user-info">
+          <img src="../assets/mia-taylor.jpg" alt="user" />
+          <p>Mia Taylor</p>
+        </div>
+        <ul>
+          <li class="nav-item">
+            <a href="../html/home.html">
+              <i class="fa-solid fa-house nav-icon"></i>
+              <span class="nav-text">Home</span>
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a href="chatbox.html">
+              <i class="fa-regular fa-comments nav-icon"></i>
+              <span class="nav-text">Chatbox</span>
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a href="checkup.html">
+              <i class="fa-solid fa-check-double nav-icon"></i>
+              <span class="nav-text">Check Up</span>
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a href="mood.html">
+              <i class="fa-regular fa-face-laugh-beam nav-icon"></i>
+              <span class="nav-text">Mood</span>
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a href="goal.html">
+              <i class="fa-solid fa-bullseye nav-icon"></i>
+              <span class="nav-text">Goal</span>
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a href="progress.html">
+              <i class="fa-solid fa-bars-progress nav-icon"></i>
+              <span class="nav-text">Progress</span>
+            </a>
+          </li>
+
+          <li class="nav-item active">
+            <a href="mediation.html">
+              <i class="fa-solid fa-heart nav-icon"></i>
+              <span class="nav-text">Meditation</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <ul>
+        <li class="nav-item">
+          <a href="#">
+            <i class="fa fa-gear nav-icon"></i>
+            <span class="nav-text">Settings</span>
+          </a>
+        </li>
+
+        <li class="nav-item">
+          <a href="landing.html">
+            <i class="fa fa-right-from-bracket nav-icon"></i>
+            <span class="nav-text">Logout</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <!--menu side bar end  -->
+
+    <!-- main content  -->
+    <section class="content">
+      <div class="left-content">
+        <div class="header">
+         <h1>Meditation</h1>
+        </div>
+
+        <!-- ====================================================================================== -->
+        <div class="mediation-events">
+          <h1>various meditation videos recommended for you</h1>
+
+          <div class="filter-content">
+            <div class="filters">
+              <button
+                class="active"
+                type="button"
+                data-name="all"
+                style="background-color: #998d9a"
+              >
+                ALL
+              </button>
+              <button
+                type="button"
+                data-name="Techniques"
+                style="background-color: #e48e2c"
+              >
+                Techniques
+              </button>
+              <button
+                type="button"
+                data-name="Causes"
+                style="background-color: #e42c2c"
+              >
+                Causes
+              </button>
+              <button
+                type="button"
+                data-name="Podcast"
+                style="background-color: #582bac"
+              >
+                Podcast
+              </button>
+              <button
+                type="button"
+                data-name="Motivation"
+                style="background-color: #4a920f"
+              >
+                Motivation
+              </button>
+              <button
+                type="button"
+                data-name="Simulations"
+                style="background-color: #1a29b3"
+              >
+                Simulations
+              </button>
+            </div>
+          </div>
+          <div class="event-container">
+            <div class="card event-card" data-name="Techniques">
+              <div class="event-header">
+                <a
+                  href="https://www.youtube.com/watch?v=wr6fQ4KpbRM"
+                  target="_blank"
+                >
+                  <img
+                    src="https://img.youtube.com/vi/wr6fQ4KpbRM/0.jpg"
+                    alt="Why is it so hard to break a bad habit?"
+                  />
+                </a>
+                <p>By TED-Ed</p>
+              </div>
+              <div class="event-content">
+                <a
+                  href="https://www.youtube.com/watch?v=wr6fQ4KpbRM"
+                  target="_blank"
+                >
+                  <h2>Why is it so hard to break a bad habit?</h2>
+                </a>
+                <p>
+                  Explore the psychology behind how good and bad habits are
+                  formed, and get tips on how to manage these behaviors
+                </p>
+              </div>
+              <div class="event-footer">
+                <p style="background-color: #e48e2c">Techniques</p>
+                <div class="btn-group">
+                  <div class="share">
+                    <button class="share-btn">
+                      <i class="fa-solid fa-share"></i>
+                    </button>
+                    <ul class="popup">
+                      <li>
+                        <a href="#" style="color: rgb(79, 153, 213)"
+                          ><i class="bx bxl-twitter"></i
+                        ></a>
+                      </li>
+                      <li>
+                        <a href="#" style="color: rgb(34, 173, 34)"
+                          ><i class="bx bxl-whatsapp"></i
+                        ></a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="card event-card" data-name="Simulations">
+              <div class="event-header">
+                <a
+                  href="https://www.youtube.com/watch?v=75d_29QWELk"
+                  target="_blank"
+                >
+                  <img
+                    src="https://img.youtube.com/vi/75d_29QWELk/0.jpg"
+                    alt="Change Your Life - One Tiny Step at a Time"
+                  />
+                </a>
+                <p>By Kurzgesagt - In a Nutshell</p>
+              </div>
+              <div class="event-content">
+                <a
+                  href="https://www.youtube.com/watch?v=75d_29QWELk"
+                  target="_blank"
+                >
+                  <h2>Change Your Life - One Tiny Step at a Time</h2>
+                </a>
+                <p>
+                  If you are like most people, there is a gap between the person
+                  you are and the person you wish to be.
+                </p>
+              </div>
+              <div class="event-footer">
+                <p style="background-color: #1a29b3">Simulations</p>
+                <div class="btn-group">
+                  <div class="share">
+                    <button class="share-btn">
+                      <i class="fa-solid fa-share"></i>
+                    </button>
+                    <ul class="popup">
+                      <li>
+                        <a href="#" style="color: rgb(79, 153, 213)"
+                          ><i class="bx bxl-twitter"></i
+                        ></a>
+                      </li>
+                      <li>
+                        <a href="#" style="color: rgb(34, 173, 34)"
+                          ><i class="bx bxl-whatsapp"></i
+                        ></a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="card event-card" data-name="Techniques">
+              <div class="event-header">
+                <a
+                  href="https://www.youtube.com/watch?v=DFHuu6yZiH8"
+                  target="_blank"
+                >
+                  <img
+                    src="https://img.youtube.com/vi/DFHuu6yZiH8/0.jpg"
+                    alt="12 Everyday Habits That Make You Smarter"
+                  />
+                </a>
+                <p>By TopThink</p>
+              </div>
+              <div class="event-content">
+                <a
+                  href="https://www.youtube.com/watch?v=DFHuu6yZiH8"
+                  target="_blank"
+                >
+                  <h2>12 Everyday Habits That Make You Smarter</h2>
+                </a>
+                <p>
+                  These everyday habits will make you smarter than people around
+                  you.our intelligence requires training and practice.
+                </p>
+              </div>
+              <div class="event-footer">
+                <p style="background-color: #e48e2c">Techniques</p>
+                <div class="btn-group">
+                  <div class="share">
+                    <button class="share-btn">
+                      <i class="fa-solid fa-share"></i>
+                    </button>
+                    <ul class="popup">
+                      <li>
+                        <a href="#" style="color: rgb(79, 153, 213)"
+                          ><i class="bx bxl-twitter"></i
+                        ></a>
+                      </li>
+                      <li>
+                        <a href="#" style="color: rgb(34, 173, 34)"
+                          ><i class="bx bxl-whatsapp"></i
+                        ></a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="card event-card" data-name="Podcast">
+              <div class="event-header">
+                <a
+                  href="https://www.youtube.com/watch?v=K8I923x5VLs"
+                  target="_blank"
+                >
+                  <img
+                    src="https://img.youtube.com/vi/K8I923x5VLs/0.jpg"
+                    alt="Bedah Buku | IS IT BAD HABIT OR GOOD HABIT ?"
+                  />
+                </a>
+                <p>By Semanggi University</p>
+              </div>
+              <div class="event-content">
+                <a
+                  href="https://www.youtube.com/watch?v=K8I923x5VLs"
+                  target="_blank"
+                >
+                  <h2>Bedah Buku | IS IT BAD HABIT OR GOOD HABIT ?</h2>
+                </a>
+                <p>
+                  Everyone has good and bad habits. How should we deal with
+                  them?
+                </p>
+              </div>
+              <div class="event-footer">
+                <p style="background-color: #582bac">Podcast</p>
+                <div class="btn-group">
+                  <div class="share">
+                    <button class="share-btn">
+                      <i class="fa-solid fa-share"></i>
+                    </button>
+                    <ul class="popup">
+                      <li>
+                        <a href="#" style="color: rgb(79, 153, 213)"
+                          ><i class="bx bxl-twitter"></i
+                        ></a>
+                      </li>
+                      <li>
+                        <a href="#" style="color: rgb(34, 173, 34)"
+                          ><i class="bx bxl-whatsapp"></i
+                        ></a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="card event-card" data-name="Causes">
+              <div class="event-header">
+                <a
+                  href="https://www.youtube.com/watch?v=d61r8gFj0xw"
+                  target="_blank"
+                >
+                  <img
+                    src="https://img.youtube.com/vi/d61r8gFj0xw/0.jpg"
+                    alt="Why You Will Never Break Your Bad Habits"
+                  />
+                </a>
+                <p>By Cole Hastings</p>
+              </div>
+              <div class="event-content">
+                <a
+                  href="https://www.youtube.com/watch?v=d61r8gFj0xw"
+                  target="_blank"
+                >
+                  <h2>Why You Will Never Break Your Bad Habits</h2>
+                </a>
+                <p>
+                  nofap, how to stop bad habits,habit removal, quitting weed,
+                  porn addiction, how to stop watching porn, nofap relapse
+                </p>
+              </div>
+              <div class="event-footer">
+                <p style="background-color: #e42c2c">Causes</p>
+                <div class="btn-group">
+                  <div class="share">
+                    <button class="share-btn">
+                      <i class="fa-solid fa-share"></i>
+                    </button>
+                    <ul class="popup">
+                      <li>
+                        <a href="#" style="color: rgb(79, 153, 213)"
+                          ><i class="bx bxl-twitter"></i
+                        ></a>
+                      </li>
+                      <li>
+                        <a href="#" style="color: rgb(34, 173, 34)"
+                          ><i class="bx bxl-whatsapp"></i
+                        ></a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="card event-card" data-name="Causes">
+              <div class="event-header">
+                <a
+                  href="https://www.youtube.com/watch?v=kvaHRdgLjbE"
+                  target="_blank"
+                >
+                  <img
+                    src="https://img.youtube.com/vi/kvaHRdgLjbE/0.jpg"
+                    alt="Why Do Bad Habits Feel SO GOOD?"
+                  />
+                </a>
+                <p>By After Skool</p>
+              </div>
+              <div class="event-content">
+                <a
+                  href="https://www.youtube.com/watch?v=kvaHRdgLjbE"
+                  target="_blank"
+                >
+                  <h2>Why Do Bad Habits Feel SO GOOD?</h2>
+                </a>
+                <p>
+                  Why do we like doing things that we know are bad for us? The
+                  reason is bad habits give us the comfort we need. The solution
+                  is end a bad habit is discomfort.
+                </p>
+              </div>
+              <div class="event-footer">
+                <p style="background-color: #e42c2c">Causes</p>
+                <div class="btn-group">
+                  <div class="share">
+                    <button class="share-btn">
+                      <i class="fa-solid fa-share"></i>
+                    </button>
+                    <ul class="popup">
+                      <li>
+                        <a href="#" style="color: rgb(79, 153, 213)"
+                          ><i class="bx bxl-twitter"></i
+                        ></a>
+                      </li>
+                      <li>
+                        <a href="#" style="color: rgb(34, 173, 34)"
+                          ><i class="bx bxl-whatsapp"></i
+                        ></a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="card event-card" data-name="Motivation">
+              <div class="event-header">
+                <a
+                  href="https://www.youtube.com/watch?v=NO8Fz6gGOus"
+                  target="_blank"
+                >
+                  <img
+                    src="https://img.youtube.com/vi/NO8Fz6gGOus/0.jpg"
+                    alt="HOW TO BREAK THE BAD HABITS - Try it and You'll See The Results"
+                  />
+                </a>
+                <p>By Be Inspired</p>
+              </div>
+              <div class="event-content">
+                <a
+                  href="https://www.youtube.com/watch?v=NO8Fz6gGOus"
+                  target="_blank"
+                >
+                  <h2>
+                    HOW TO BREAK THE BAD HABITS - Try it and You'll See The
+                    Results
+                  </h2>
+                </a>
+                <p>
+                  Nir Eyal explains how to break a bad habit. Try it and you
+                  will see the results.
+                </p>
+              </div>
+              <div class="event-footer">
+                <p style="background-color: #4a920f">Motivation</p>
+                <div class="btn-group">
+                  <div class="share">
+                    <button class="share-btn">
+                      <i class="fa-solid fa-share"></i>
+                    </button>
+                    <ul class="popup">
+                      <li>
+                        <a href="#" style="color: rgb(79, 153, 213)"
+                          ><i class="bx bxl-twitter"></i
+                        ></a>
+                      </li>
+                      <li>
+                        <a href="#" style="color: rgb(34, 173, 34)"
+                          ><i class="bx bxl-whatsapp"></i
+                        ></a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="card event-card" data-name="Motivation">
+              <div class="event-header">
+                <a
+                  href="https://www.youtube.com/watch?v=9ViEuzHT74c"
+                  target="_blank"
+                >
+                  <img
+                    src="https://img.youtube.com/vi/9ViEuzHT74c/0.jpg"
+                    alt="How To Stay Motivated & Break Bad Habits"
+                  />
+                </a>
+                <p>By Motivation2Study</p>
+              </div>
+              <div class="event-content">
+                <a
+                  href="https://www.youtube.com/watch?v=9ViEuzHT74c"
+                  target="_blank"
+                >
+                  <h2>"How To Stay Motivated & Break Bad Habits</h2>
+                </a>
+                <p>
+                  This is How to Stay Motivated and Break Your Bad Habits
+                  featuring New York Times Bestselling Author James Clear.
+                </p>
+              </div>
+              <div class="event-footer">
+                <p style="background-color: #4a920f">Motivation</p>
+                <div class="btn-group">
+                  <div class="share">
+                    <button class="share-btn">
+                      <i class="fa-solid fa-share"></i>
+                    </button>
+                    <ul class="popup">
+                      <li>
+                        <a href="#" style="color: rgb(79, 153, 213)"
+                          ><i class="bx bxl-twitter"></i
+                        ></a>
+                      </li>
+                      <li>
+                        <a href="#" style="color: rgb(34, 173, 34)"
+                          ><i class="bx bxl-whatsapp"></i
+                        ></a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- main content end -->
+
+      <!-- right content -->
+      <div class="right-content">
+        <div class="summaries">
+          <h1>Your Summaries</h1>
+          <div class="summaries-container">
+            <div class="summaries-status">
+              <div class="summaries-box card">
+                <a href="checkup.html">Daily Check Up </a>
+                <p>Not Done</p>
+                <i class="fa-regular fa-circle-xmark"></i>
+              </div>
+              <div class="summaries-box card">
+                <a href="progress.html">Days without drinking alcohol</a>
+                <p>3 Weeks</p>
+                <i class="fa-regular fa-calendar-check"></i>
+              </div>
+            </div>
+            <div class="chart" id="doughnut-chart">
+              <a href="mood.html">Your Mood Tracker</a>
+              <canvas id="doughnut"></canvas>
+              <ul></ul>
+            </div>
+          </div>
+        </div>
+        <div class="notifications">
+          <h1>Notifications</h1>
+          <div class="notifications-container">
+            <div class="notifications-status">
+             
+              <div class="notifications-activity">
+                
+                <img
+                  src="../assets/not-1.png"
+                  alt=""
+                />
+                <div class="text-notifications">
+                  <h2>John Smith</h2>
+                  <p>Your personal expert has replied!</p>
+                </div>
+              </div>
+              <small>1 hour ago</small>
+            </div>
+
+            <div class="notifications-status">
+              <div class="notifications-activity">
+                <img
+                  src="../assets/not-2.png"
+                  alt=""
+                />
+                <div class="text-notifications">
+                  <h2>Emma Watson</h2>
+                  <p>Remember to do your Daily Check Up Mia Taylor</p>
+                </div>
+              </div>
+              <small>5 hours ago</small>
+            </div>
+
+            <div class="notifications-status">
+              <div class="notifications-activity">
+                <img
+                  src="../assets/not-3.png"
+                  alt=""
+                />
+                <div class="text-notifications">
+                  <h2>Alex Johnson</h2>
+                  <p>
+                    How are you feeling today? You can answer me by answering our
+                    Mood Tracker
+                  </p>
+                </div>               
+              </div>
+              <small>1 day ago</small>
+            </div>
+
+            <div class="notifications-status">
+              <div class="notifications-activity">
+                <img
+                  src="../assets/not-4.png"
+                  alt=""
+                />
+                <div class="text-notifications">
+                  <h2>Sarah Brown</h2>
+                  <p>
+                    You have a Online Seminar "How to manage your anger" in 15
+                    Minutes.
+                  </p>
+                </div> 
+
+              </div>
+              <small>1 day ago</small>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- right content end -->
+    </section>
+    <script src="../js/mediation.js"></script>
+  </body>
+</html>

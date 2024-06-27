@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WellMind:Helping with Care</title>
+    <link rel="stylesheet" href="../css/styles1.css">
+    <link href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="icon" href="../assets/icon-light.png">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body class="root">
+
+    <!-- menu side bar -->
+    <nav class="main-menu">
+        <div>
+          <div class="user-info">
+            <img
+              src="../assets/mia-taylor.jpg"
+              alt="user" />
+            <p>Mia Taylor</p>
+          </div>
+          <ul>
+            <li class="nav-item">
+              <a href="home.html">
+                <i class="fa-solid fa-house nav-icon"></i>
+                <span class="nav-text">Home</span>
+              </a>
+            </li>
+  
+            <li class="nav-item">
+              <a href="chatbox.html">
+                  <i class="fa-regular fa-comments nav-icon"></i>
+                  <span class="nav-text">Chatbox</span>
+              </a>
+            </li>
+            
+            <li class="nav-item active">
+              <a href="checkup.html">
+                <i class="fa-solid fa-check-double nav-icon"></i>
+                <span class="nav-text">Check Up</span>
+              </a>
+            </li>
+  
+            <li class="nav-item">
+              <a href="mood.html">
+                <i class="fa-regular fa-face-laugh-beam nav-icon"></i>
+                <span class="nav-text">Mood</span>
+              </a>
+            </li>
+  
+            <li class="nav-item">
+              <a href="goal.html">
+                <i class="fa-solid fa-bullseye nav-icon"></i>
+                <span class="nav-text">Goal</span>
+              </a>
+            </li>
+
+            <li class="nav-item">
+              <a href="progress.html">
+                <i class="fa-solid fa-bars-progress nav-icon"></i>
+                <span class="nav-text">Progress</span>
+              </a>
+            </li>
+  
+            <li class="nav-item">
+              <a href="mediation.html">
+                <i class="fa-solid fa-heart nav-icon"></i>
+                <span class="nav-text">Meditation</span>
+              </a>
+            </li>
+  
+          </ul>
+        </div>
+  
+        <ul>
+          <li class="nav-item">
+            <a href="#">
+              <i class="fa fa-gear nav-icon"></i>
+              <span class="nav-text">Settings</span>
+            </a>
+          </li>
+  
+          <li class="nav-item">
+            <a href="landing.html">
+              <i class="fa fa-right-from-bracket nav-icon"></i>
+              <span class="nav-text">Logout</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <!--menu side bar end  -->
+
+    <!-- main content  -->
+    <section class="content">
+        <div class="left-content">
+            <div class="header">
+                <h1>Daily Check Up</h1>
+            </div>
+
+            <div class="checkup">
+                <h2>Here you can answer questions so we can keep track of how you are doing daily! Consider this as your daily diary.</h2>
+              
+                <form class="form">
+                  <span class="input-span">
+                    <label for="mood" class="label">How are you feeling today?</label>
+                    <select name="mood" id="mood">
+                      <option value="" disabled selected>Select Here</option>
+                      <option value="happy">Happy</option>
+                      <option value="sad">Sad</option>
+                      <option value="angry">Angry</option>
+                      <option value="anxious">Anxious</option>
+                      <option value="neutral">Neutral</option>
+                      <option value="excited">Excited</option>
+                    </select>
+                  </span>
+              
+                  <span class="input-span">
+                    <label for="physical-health" class="label">How is your physical health today?</label>
+                    <select name="physical-health" id="physical-health">
+                      <option value="" disabled selected>Select Here</option>
+                      <option value="great">Great</option>
+                      <option value="good">Good</option>
+                      <option value="fair">Fair</option>
+                      <option value="poor">Poor</option>
+                    </select>
+                  </span>
+              
+                  <span class="input-span">
+                    <label for="sleep" class="label">How did you sleep last night?</label>
+                    <select name="sleep" id="sleep">
+                      <option value="" disabled selected>Select Here</option>
+                      <option value="very-well">Very well</option>
+                      <option value="well">Well</option>
+                      <option value="okay">Okay</option>
+                      <option value="poorly">Poorly</option>
+                      <option value="very-poorly">Very poorly</option>
+                    </select>
+                  </span>
+              
+                  <span class="input-span">
+                    <label for="energy" class="label">How is your energy level today?</label>
+                    <select name="energy" id="energy">
+                      <option value="" disabled selected>Select Here</option>
+                      <option value="high">High</option>
+                      <option value="moderate">Moderate</option>
+                      <option value="low">Low</option>
+                      <option value="very-low">Very low</option>
+                    </select>
+                  </span>
+              
+                  <span class="input-span">
+                    <label for="stress" class="label">How stressed do you feel today?</label>
+                    <select name="stress" id="stress">
+                      <option value="" disabled selected>Select Here</option>
+                      <option value="not-at-all">Not at all</option>
+                      <option value="a-little">A little</option>
+                      <option value="moderately">Moderately</option>
+                      <option value="very">Very</option>
+                      <option value="extremely">Extremely</option>
+                    </select>
+                  </span>
+              
+                  <span class="input-span">
+                    <label for="emotions" class="label">Are you experiencing any strong emotions today? If so, what are they?</label>
+                    <textarea name="emotions" id="emotions"></textarea>
+                  </span>
+              
+                  <span class="input-span">
+                    <label for="productivity" class="label">How productive have you felt today?</label>
+                    <select name="productivity" id="productivity">
+                      <option value="" disabled selected>Select Here</option>
+                      <option value="very-productive">Very productive</option>
+                      <option value="productive">Productive</option>
+                      <option value="somewhat-productive">Somewhat productive</option>
+                      <option value="not-productive">Not productive</option>
+                    </select>
+                  </span>
+              
+                  <span class="input-span">
+                    <label for="social" class="label">Have you had any meaningful social interactions today?</label>
+                    <select name="social" id="social">
+                      <option value="" disabled selected>Select Here</option>
+                      <option value="yes">Yes</option>
+                      <option value="no">No</option>
+                    </select>
+                  </span>
+              
+                  <span class="input-span">
+                    <label for="diet" class="label">Have you eaten well today?</label>
+                    <select name="diet" id="diet">
+                      <option value="" disabled selected>Select Here</option>
+                      <option value="yes">Yes</option>
+                      <option value="no">No</option>
+                      <option value="not-sure">Not sure</option>
+                    </select>
+                  </span>
+              
+                  <span class="input-span">
+                    <label for="clarity" class="label">How clear-headed do you feel today?</label>
+                    <select name="clarity" id="clarity">
+                      <option value="" disabled selected>Select Here</option>
+                      <option value="very-clear">Very clear</option>
+                      <option value="clear">Clear</option>
+                      <option value="somewhat-clear">Somewhat clear</option>
+                      <option value="foggy">Foggy</option>
+                      <option value="very-foggy">Very foggy</option>
+                    </select>
+                  </span>
+              
+                  <span class="input-span">
+                    <label for="self-care" class="label">Have you taken time for self-care today?</label>
+                    <select name="self-care" id="self-care">
+                      <option value="" disabled selected>Select Here</option>
+                      <option value="yes">Yes</option>
+                      <option value="no">No</option>
+                    </select>
+                  </span>
+              
+                  <span class="input-span">
+                    <label for="positive-experience" class="label">Did anything positive happen today?</label>
+                    <select name="positive-experience" id="positive-experience">
+                      <option value="" disabled selected>Select Here</option>
+                      <option value="yes">Yes</option>
+                      <option value="no">No</option>
+                    </select>
+                  </span>
+              
+                  <span class="input-span">
+                    <label for="positive-details" class="label">If yes, what was it?</label>
+                    <textarea name="positive-details" id="positive-details"></textarea>
+                  </span>
+              
+                  <span class="input-span">
+                    <label for="concerns" class="label">Do you have any concerns or worries you would like to share?</label>
+                    <textarea name="concerns" id="concerns"></textarea>
+                  </span>
+              
+                  <span class="input-span">
+                    <label for="support" class="label">Do you feel you have the support you need today?</label>
+                    <select name="support" id="support">
+                      <option value="" disabled selected>Select Here</option>
+                      <option value="yes">Yes</option>
+                      <option value="no">No</option>
+                      <option value="not-sure">Not sure</option>
+                    </select>
+                  </span>
+
+                  <span class="input-span">
+                    <label for="diary" class="label">Daily Diary</label>
+                    <textarea name="diary" id="diary"></textarea>
+                  </span>
+              
+                  <input class="submit" type="submit" value="Submit">
+                </form>
+              </div>  
+        </div>
+        <!-- main content end -->
+
+        <!-- right content -->
+        <div class="right-content">
+            <div class="summaries">
+                <h1>Your Summaries</h1>
+                <div class="summaries-container">
+                    <div class="summaries-status">
+                        <div class="summaries-box card">
+                            <a href="checkup.html">Daily Check Up </a>
+                            <p>Not Done</p>
+                            <i class="fa-regular fa-circle-xmark"></i>
+                        </div>
+                        <div class="summaries-box card">
+                            <a href="progress.html">Days without drinking alcohol</a>
+                            <p>3 Weeks</p>
+                            <i class="fa-regular fa-calendar-check"></i>
+                        </div>
+                    </div>
+                    <div class="chart" id="doughnut-chart">
+                        <a href="mood.html">Your Mood Tracker</a>
+                        <canvas id="doughnut"></canvas>
+                        <ul></ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="notifications">
+                <h1>Notifications</h1>
+                <div class="notifications-container">
+                    <div class="notifications-status">
+                        <div class="notifications-activity">
+                            <img
+                            src="../assets/not-1.png"
+                            alt="" />
+                            <div class="text-notifications">
+                              <h2>John Smith</h2>
+                              <p>Your personal expert has replied!</p>
+                            </div>
+                        </div>
+                    <small>1 hour ago</small>
+                    </div>
+
+                    <div class="notifications-status">
+                        <div class="notifications-activity">
+                            <img
+                            src="../assets/not-2.png"
+                            alt="" />
+                            <div class="text-notifications">
+                              <h2>Emma Watson</h2>
+                              <p>Remember to do your Daily Check Up Mia Taylor</p>
+                            </div>
+                        </div>
+                    <small>5 hours ago</small>
+                    </div>
+
+                    <div class="notifications-status">
+                        <div class="notifications-activity">
+                            <img
+                            src="../assets/not-3.png"
+                            alt="" />
+                            <div class="text-notifications">
+                              <h2>Alex Johnson</h2>
+                              <p>
+                                How are you feeling today? You can answer me by answering our
+                                Mood Tracker
+                              </p>
+                            </div> 
+                        </div>
+                    <small>1 day ago</small>
+                    </div>
+
+                    <div class="notifications-status">
+                        <div class="notifications-activity">
+                            <img
+                            src="../assets/not-4.png"
+                            alt="" />
+                            <div class="text-notifications">
+                              <h2>Sarah Brown</h2>
+                              <p>
+                                You have a Online Seminar "How to manage your anger" in 15
+                                Minutes.
+                              </p>
+                            </div> 
+                        </div>
+                    <small>1 day ago</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- right content end -->
+    </section>
+    <script src="../js/home.js"></script>
+</body>
+</html>

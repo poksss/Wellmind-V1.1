@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WellMind:Helping with Care</title>
+    <link rel="stylesheet" href="../css/styles1.css">
+    <link href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="icon" href="../assets/icon-light.png">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body class="root">
+
+  <!-- menu side bar -->
+    <nav class="main-menu">
+      <div>
+        <div class="user-info">
+          <img
+            src="../assets/mia-taylor.jpg"
+            alt="user" />
+          <p>Mia Taylor</p>
+        </div>
+        <ul>
+          <li class="nav-item active">
+            <a href="#">
+              <i class="fa-solid fa-house nav-icon"></i>
+              <span class="nav-text">Home</span>
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a href="chatbox.html">
+                <i class="fa-regular fa-comments nav-icon"></i>
+                <span class="nav-text">Chatbox</span>
+            </a>
+          </li>
+          
+          <li class="nav-item">
+            <a href="checkup.html">
+              <i class="fa-solid fa-check-double nav-icon"></i>
+              <span class="nav-text">Check Up</span>
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a href="mood.html">
+              <i class="fa-regular fa-face-laugh-beam nav-icon"></i>
+              <span class="nav-text">Mood</span>
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a href="goal.html">
+              <i class="fa-solid fa-bullseye nav-icon"></i>
+              <span class="nav-text">Goal</span>
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a href="progress.html">
+              <i class="fa-solid fa-bars-progress nav-icon"></i>
+              <span class="nav-text">Progress</span>
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a href="mediation.html">
+              <i class="fa-solid fa-heart nav-icon"></i>
+              <span class="nav-text">Meditation</span>
+            </a>
+          </li>
+
+        </ul>
+      </div>
+
+      <ul>
+        <li class="nav-item">
+          <a href="#">
+            <i class="fa fa-gear nav-icon"></i>
+            <span class="nav-text">Settings</span>
+          </a>
+        </li>
+
+        <li class="nav-item">
+          <a href="landing.html">
+            <i class="fa fa-right-from-bracket nav-icon"></i>
+            <span class="nav-text">Logout</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <!--menu side bar end  -->
+
+    <!-- main content  -->
+    <section class="content">
+      <div class="left-content">
+        <div class="header">
+          <h1>Wellcome Mia Taylor</h1>
+        </div>
+
+        <div class="upcoming-events">
+        <h1>Upcoming Well Being Seminars</h1>
+          <div class="event-container">
+            <div class="card event-card">
+              <div class="event-header">
+                <img src="../assets/seminar-1.png" alt="">
+                <p>14 August 2024, 8:00 PM</p>
+              </div>
+              <div class="event-content">
+                <h2>Navigating the Mind: Strategies for Mental Wellbeing</h2>
+                <p>Grand Indonesia Avenue</p>
+              </div>
+              <div class="event-footer">
+                <p style="background-color: #e48e2c">Onsite</p>
+                <button>Buy Ticket</button>
+              </div>
+            </div>
+
+            <div class="card event-card">
+              <div class="event-header">
+                <img src="../assets/seminar-8.jpg" alt="">
+                <p>17 August 2024, 7:00 AM</p>
+              </div>
+              <div class="event-content">
+                <h2>Self-Care Simplified: Practical Approaches to Wellbeing</h2>
+                <p>Zoom Meetings</p>
+              </div>
+              <div class="event-footer">
+                <p style="background-color: #582bac">Online</p>
+                <button>Save Link</button>
+              </div>
+            </div>
+
+            <div class="card event-card">
+              <div class="event-header">
+                <img src="../assets/seminar-7.png" alt="">
+                <p>20 August 2024, 4:30 PM</p>
+              </div>
+              <div class="event-content">
+                <h2>The Power of Positivity: Cultivating a Growth Mindset</h2>
+                <p>Youtube Live</p>
+              </div>
+              <div class="event-footer">
+                <p style="background-color: #582bac">Online</p>
+                <button>Save Link</button>
+              </div>
+            </div>
+
+            <div class="card event-card">
+              <div class="event-header">
+                <img src="../assets/seminar-2.jpg" alt="">
+                <p>22 August 2024, 4:00 PM</p>
+              </div>
+              <div class="event-content">
+                <h2>Building Resilience: Thriving in Challenging Times</h2>
+                <p>Binus @Bekasi Lobby MMG</p>
+              </div>
+              <div class="event-footer">
+                <p style="background-color: #e48e2c">Onsite</p>
+                <button>Buy Ticket</button>
+              </div>
+            </div>
+
+            <div class="card event-card">
+              <div class="event-header">
+                <img src="../assets/seminar-6.png" alt="">
+                <p>28 August 2024, 3:00 PM</p>
+              </div>
+              <div class="event-content">
+                <h2>Mindfulness Matters: Techniques for Everyday Calm</h2>
+                <p>Zoom Meetings</p>
+              </div>
+              <div class="event-footer">
+                <p style="background-color: #582bac">Online</p>
+                <button>Save Link</button>
+              </div>
+            </div>
+
+            <div class="card event-card">
+              <div class="event-header">
+                <img src="../assets/seminar-5.jpg" alt="">
+                <p>1 September 2024, 1:00 PM</p>
+              </div>
+              <div class="event-content">
+                <h2>Mental Health in the Workplace: Creating a Supportive Environment</h2>
+                <p>Zoom Meetings</p>
+              </div>
+              <div class="event-footer">
+                <p style="background-color: #582bac">Online</p>
+                <button>Save Link</button>
+              </div>
+            </div>
+
+            <div class="card event-card">
+              <div class="event-header">
+                <img src="../assets/seminar-3.jpg" alt="">
+                <p>4 September 2024, 1:00 PM</p>
+              </div>
+              <div class="event-content">
+                <h2>Breaking the Stigma: Open Conversations about Mental Health</h2>
+                <p>Gandaria City Hall</p>
+              </div>
+              <div class="event-footer">
+                <p style="background-color: #e48e2c">Onsite</p>
+                <button>Buy Ticket</button>
+              </div>
+            </div>
+
+            <div class="card event-card">
+              <div class="event-header">
+                <img src="../assets/seminar-4.jpg" alt="">
+                <p>10 September 2024, 2:30 PM</p>
+              </div>
+              <div class="event-content">
+                <h2>Stress Management 101: Tools for a Balanced Life</h2>
+                <p>Tennis & Croquet Club</p>
+              </div>
+              <div class="event-footer">
+                <p style="background-color: #e48e2c">Onsite</p>
+                <button>Buy Ticket</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        
+
+        <div class="tips-and-tricks">
+          <h1>Professionals Tips and Tricks</h1>
+          <div class="tips-and-tricks-container">
+            <div class="card tips-and-tricks-card">
+              <h2>Change Your Environment</h2>
+              <p>
+                Your environment can significantly influence your habits. Modifying your surroundings 
+                can make it easier to avoid triggers and maintain new, healthier behaviors. For 
+                example, if you're trying to reduce screen time before bed, keep electronic devices 
+                out of the bedroom to create a more conducive environment for sleep.
+              </p>
+            </div>
+        
+            <div class="card tips-and-tricks-card">
+              <h2>Set SMART Goals</h2>
+              <p>
+                SMART goals are Specific, Measurable, Achievable, 
+                Relevant, and Time-bound. This framework can help 
+                you define clear and achievable objectives. For example, 
+                instead of setting a vague goal like "get in shape," a SMART 
+                goal would be "lose 10 pounds in three months by exercising three 
+                times a week and following a healthy diet."
+              </p>
+            </div>
+        
+            <div class="card tips-and-tricks-card">
+              <h2>Practice Self-Care Regularly</h2>
+              <p>
+                Self-care activities, such as exercise, meditation, hobbies, 
+                or spending time with loved ones, can help reduce stress and 
+                improve overall mental well-being. You can start by setting aside 
+                time each day for a self-care activity, like going for a walk or reading 
+                a book, can help you relax and recharge.
+              </p>
+            </div>
+          </div>
+        </div>        
+      </div>
+      <!-- main content end -->
+
+      <!-- right content -->
+      <div class="right-content">
+        <div class="summaries">
+            <h1>Your Summaries</h1>
+            <div class="summaries-container">
+                <div class="summaries-status">
+                    <div class="summaries-box card">
+                        <a href="checkup.html">Daily Check Up </a>
+                        <p>Not Done</p>
+                        <i class="fa-regular fa-circle-xmark"></i>
+                    </div>
+                    <div class="summaries-box card">
+                        <a href="progress.html">Days without drinking alcohol</a>
+                        <p>3 Weeks</p>
+                        <i class="fa-regular fa-calendar-check"></i>
+                    </div>
+                </div>
+                <div class="chart" id="doughnut-chart">
+                    <a href="mood.html">Your Mood Tracker</a>
+                    <canvas id="doughnut"></canvas>
+                    <ul></ul>
+                </div>
+            </div>
+        </div>
+        <div class="notifications">
+            <h1>Notifications</h1>
+            <div class="notifications-container">
+                <div class="notifications-status">
+                    <div class="notifications-activity">
+                        <img
+                        src="../assets/not-1.png"
+                        alt="" />
+                        <div class="text-notifications">
+                          <h2>John Smith</h2>
+                          <p>Your personal expert has replied!</p>
+                        </div>
+                    </div>
+                <small>1 hour ago</small>
+                </div>
+
+                <div class="notifications-status">
+                    <div class="notifications-activity">
+                        <img
+                        src="../assets/not-2.png"
+                        alt="" />
+                        <div class="text-notifications">
+                          <h2>Emma Watson</h2>
+                          <p>Remember to do your Daily Check Up Mia Taylor</p>
+                        </div>
+                    </div>
+                <small>5 hours ago</small>
+                </div>
+
+                <div class="notifications-status">
+                    <div class="notifications-activity">
+                        <img
+                        src="../assets/not-3.png"
+                        alt="" />
+                        <div class="text-notifications">
+                          <h2>Alex Johnson</h2>
+                          <p>
+                            How are you feeling today? You can answer me by answering our
+                            Mood Tracker
+                          </p>
+                        </div> 
+                    </div>
+                <small>1 day ago</small>
+                </div>
+
+                <div class="notifications-status">
+                    <div class="notifications-activity">
+                        <img
+                        src="../assets/not-4.png"
+                        alt="" />
+                        <div class="text-notifications">
+                          <h2>Sarah Brown</h2>
+                          <p>
+                            You have a Online Seminar "How to manage your anger" in 15
+                            Minutes.
+                          </p>
+                        </div>
+                    </div>
+                <small>1 day ago</small>
+                </div>
+            </div>
+        </div>
+      </div>
+      <!-- right content end -->
+
+    </section>
+    <script src="../js/home.js"></script>    
+  </body>
+</html>

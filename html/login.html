@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WellMind:Helping with Care</title>
+    <link rel="stylesheet" href="../css/login.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="icon" href="../assets/icon-light.png">
+</head>
+<body>
+    <div class="container" id="container">
+        <div class="form-container sing-up">
+            <form>
+                <h1>Create Account</h1>
+                <!-- success message -->
+                <div class="success-message" id="signup-success-message">Registrasi berhasil!</div>
+                <!-- name input -->
+                <div class="input-container">
+                    <input type="text" id="name" placeholder="User Name">
+                    <div class="error-message" id="signup-name-error">Nama wajib diisi!</div>
+                    <div class="error-message" id="signup-name-invalid-error">Nama hanya boleh mengandung huruf!</div>
+                </div>
+                <!-- email input -->
+                <div class="input-container">
+                    <input type="email" id="email" placeholder="Email">
+                    <div class="error-message" id="signup-email-error">Email wajib diisi!</div>
+                    <div class="error-message" id="signup-email-invalid-error">Alamat email tidak valid!</div>
+                </div>
+                <!-- phone input -->
+                <div class="input-container">
+                    <input type="tel" id="phone" placeholder="No.phone">
+                    <div class="error-message" id="signup-phone-error">Nomor telepon wajib diisi!</div>
+                    <div class="error-message" id="signup-phone-invalid-error">Nomor telepon tidak valid!</div>
+                </div>
+                <!-- password input -->
+                <div class="input-container">
+                      <div class="error-message" id="signup-password-invalid-error">Sandi harus mengandung huruf besar, huruf kecil, angka, dan karakter khusus</div>
+                    <input type="password" id="password" placeholder="Password">
+                    <div class="error-message" id="signup-password-error">Sandi wajib diisi, serta memiliki panjang minimal 8 karakter!</div>
+                </div>
+                <!-- confirm password input -->
+                <div class="input-container">
+                    <input type="password" id="confirm-password" placeholder="Confirm Password">
+                    <div class="error-message" id="signup-confirm-password-error">Konfirmasi sandi wajib diisi!</div>
+                    <div class="error-message" id="signup-confirm-password-mismatch-error">Konfirmasi sandi tidak cocok!</div>
+                </div>
+                <span> OR</span>
+                <div class="social-icon">
+                    <img src="../assets/Google-sign_in.png" alt="">
+                </div>
+                <button>Sign Up</button>
+            </form>
+        </div>
+        <div class="form-container sing-in">
+            <form>
+                <h1>Sign In</h1>
+                <div class="error-message" id="signin-invalid-error">Nama pengguna atau sandi salah!</div>
+                <div class="input-container">
+                    <input type="text" id="name" placeholder="User Name">
+                    <div class="error-message" id="signin-name-error">Nama wajib diisi!</div>
+                </div>
+                <div class="input-container">
+                    <input type="password" id="password" placeholder="Password">
+                    <div class="error-message" id="signin-password-error">Sandi wajib diisi!</div>
+                </div>
+                <span> OR</span>
+                <div class="social-icon">
+                   <img src="../assets/Google-sign_in.png" alt="">
+                </div>
+                <button>Sign In</button>
+            </form>
+        </div>
+        <div class="toggle-container">
+            <div class="toggle">
+                <div class="toggle-panel toggle-left">
+                    <h1>Hello Friends!</h1>
+                    <p>Let's start your Wellmind journey by creating a brand new account to keep track all your progress over the years!</p>
+                    <button class="hidden" id="login">sign in</button>
+                </div>
+                <div class="toggle-panel toggle-rigth">
+                    <h1>Welcome Back!</h1>
+                    <p>To continue your Wellmind journey, please insert your Wellmind account you created before!</p>
+                    <button class="hidden" id="register">sign up</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../js/login.js"></script>
+</body>
+</html>

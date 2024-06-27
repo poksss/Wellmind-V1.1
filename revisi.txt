@@ -1,0 +1,29 @@
+https://poksss.github.io/Wellmind/html/login.html
+- Button login with Google (Improvement)
+- UX Improvement (Remove/hide button "Forget your Password?")
+
+ https://poksss.github.io/Wellmind/html/home.html
+- Your summary => Icon (small size & color reduction)
+- Notifications (Add new Username)
+- First Selection (Img) change to Title (Heading)
+- Professionals Tips and Tricks => Improvement font (Font Weight) on Desc
+
+https://poksss.github.io/Wellmind/html/goal.html
+- Font Improvement on Table
+
+https://poksss.github.io/Wellmind/html/progress.html
+- Form Improvement and Button Submit Improvement
+
+https://poksss.github.io/Wellmind/html/mediation.html
+- Improvement Tabs (Coloring)
+- Improvement Badge on Card (Body){
+	full: 62px 
+	980px : 56px
+	760px : 48px
+	610px : 42px
+	450px : 36px 
+}
+
+https://poksss.github.io/Wellmind/html/landing.html
+- Improvement Font Weight on Heading
+- Border Radius on Card
